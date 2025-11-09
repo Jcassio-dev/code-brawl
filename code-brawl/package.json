@@ -20,6 +20,10 @@
       {
         "command": "coderunner.submitCode",
         "title": "CodeRunner: Enviar Código"
+      },
+      {
+        "command": "coderunner.startChallenge",
+        "title": "CodeRunner: Receber desafio"
       }
     ]
   },
