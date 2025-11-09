@@ -16,6 +16,10 @@
       {
         "command": "code-brawl.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "coderunner.submitCode",
+        "title": "CodeRunner: Enviar Código"
       }
     ]
   },
