@@ -16,4 +16,5 @@ export interface ExecutionResult {
   stderr: string;
   exitCode: number;
   timedOut: boolean;
+  execTimeMs: number;
 }

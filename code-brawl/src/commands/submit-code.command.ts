@@ -17,7 +17,10 @@ export async function submitCodeCommand() {
     const result = await submitSolution(code, language);
 
     if (result.exitCode === 0) {
-      vscode.window.showInformationMessage("Sucesso!\n" + result.stdout);
+      const timeInfo = `(em ${result.execTimeMs} ms)`;
+      vscode.window.showInformationMessage(
+        `Sucesso! ${timeInfo} \n` + result.stdout
+      );
     } else {
       vscode.window.showErrorMessage(
         `Erro (Código: ${result.exitCode}):\n` + result.stderr
